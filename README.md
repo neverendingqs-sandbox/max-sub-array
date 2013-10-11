@@ -1,14 +1,18 @@
-Implimentation of different algorithms around the maximum subarray problem. Automated tests found in maxsubarraytests.py uses the 'unittest' library as the test runner.
+Implimentation of different algorithms around the maximum subarray problem.
+
+Automated tests found in maxsubarraytests.py uses the 'unittest' library as the test runner.
 
 def kadane(self, inputarray):
 
-	Kadane's algorithm (Copied from http://en.wikipedia.org/wiki/Maximum_subarray_problem on June 22, 2013):
+	Kadane's algorithm for calculating the sum of the largest subarray.
+	Copied from http://en.wikipedia.org/wiki/Maximum_subarray_problem on June 22, 2013
 	Returns the sum of the subarray
 	Runs in O(n) time
 
 def kadaneWithSubarray(self, inputarray):
 
-	Modified from code in http://en.wikipedia.org/wiki/Maximum_subarray_problem on June 22, 2013)
+	Calculates the sum of the largest subarray and the subarray itself
+	Modified from code in http://en.wikipedia.org/wiki/Maximum_subarray_problem on June 22, 2013
 	Returns the starting index of the subarray, the size of the subarray, and the sum of the subarray
 	Runs in O(n) time
 	
