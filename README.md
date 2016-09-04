@@ -1,9 +1,6 @@
-
 # Maximum Sub-Array Problem
 
 Implementation of different algorithms around the maximum subarray problem.
-
-Automated tests found in maxsubarraytests.py uses the 'unittest' library as the test runner.
 
 ## def kadane(self, inputarray):
 
