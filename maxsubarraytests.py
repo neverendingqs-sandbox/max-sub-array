@@ -9,7 +9,7 @@ import unittest
 import maxsubarray
 
 class MaxsubarrayTests(unittest.TestCase):
-    
+
     def setUp(self):
         self.testcases = [
             {'input':[-2, 1, -3, 4, -1, 2, 1, -5, 4], 'index':3, 'length':4, 'sum':6},
@@ -31,14 +31,14 @@ class MaxsubarrayTests(unittest.TestCase):
         for test_case in self.testcases:
             with self.subTest(test_case=test_case):
                 expected_results = test_case['index'], test_case['length'], test_case['sum']
-                actual_results = maxsubarray.kadaneWithSubarray(test_case['input'])
+                actual_results = maxsubarray.kadane_with_subarray(test_case['input'])
                 self.assertEqual(expected_results, actual_results)
-    
+
     def test_brute_force(self):
         for test_case in self.testcases:
             with self.subTest(test_case=test_case):
                 expected_results = test_case['index'], test_case['length'], test_case['sum']
-                actual_results = maxsubarray.bruteForce(test_case['input'])
+                actual_results = maxsubarray.brute_force(test_case['input'])
                 self.assertEqual(expected_results, actual_results)
 
 if __name__ == "__main__":
